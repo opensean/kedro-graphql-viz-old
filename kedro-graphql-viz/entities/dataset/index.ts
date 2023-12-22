@@ -1,2 +1,3 @@
-export { Dataset } from './dataset.js';
-export type { PlainDataset } from './dataset.js';
+export { Dataset } from './dataset';
+export type { PlainDataset } from './dataset';
+export { mockDataset } from './dataset.mock';

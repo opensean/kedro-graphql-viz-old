@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { DataCatalog } from "@opensean.kedro-graphql-viz/entities/data-catalog"
+import { DataCatalog } from "@opensean/kedro-graphql-viz.entities.data-catalog"
 import VueJsonPretty from 'vue-json-pretty';
 import 'vue-json-pretty/lib/styles.css';
 

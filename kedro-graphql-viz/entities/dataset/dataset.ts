@@ -1,21 +1,22 @@
 
 export type PlainDataset = {
+  /**
+   * name of the dataset
+   */
   name: string;
+  /**
+   * the dataset configuration
+   */
   config: {};
 }
 
+//{ firstName, lastName, age } : { firstName: string, lastName: string, age: number }
 export class Dataset {
-  constructor(
-    /**
-     * name of the dataset
-     */
-    readonly name: string
-
-    /**
-     * the dataset configuration
-     */
-    readonly config: {}
-  ) {}
+  constructor({name, config}: PlainDataset) 
+  {
+    this.name = name;
+    this.config = config;
+  }
 
   /**
    * serialize a Dataset into
@@ -33,9 +34,6 @@ export class Dataset {
    * plain object.
    */
   static from(plainDataset: PlainDataset) {
-    return new Dataset(
-      plainDataset.name,
-      plainDataset.config
-    );
+    return new Dataset(plainDataset);
   }
 }

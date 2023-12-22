@@ -1,20 +1,23 @@
+import type { PlainDataset } from '@opensean/kedro-graphql-viz.entities.dataset';
+import { Dataset } from '@opensean/kedro-graphql-viz.entities.dataset';
 
 export type PlainDataCatalog = {
-  datasets: []
-  parameters: []
+  /**
+  * array of the DataSet objects.
+  */
+  datasets: [PlainDataset]
 }
 
 export class DataCatalog {
   constructor(
-    /**
-     * array of the DataSet objects.
-     */
-    readonly datasets: [],
-    /**
-     * array of the Parameter objects.
-     */
-    readonly parameters: []
-  ) {}
+      /**
+      * array of the DataSet objects.
+      */
+      {datasets}: PlainDataCatalog,
+  ) {
+    this.datasets = datasets.map((dataset) => Dataset.from(dataset));
+  }
+
 
   /**
    * serialize a DataCatalog into
@@ -22,8 +25,7 @@ export class DataCatalog {
    */
   toObject() {
     return {
-      datasets: this.datasets,
-      parameters: this.parameters,
+      datasets: this.datasets.map((dataset) => dataset.toObject()),
     };
   }
 
@@ -32,9 +34,7 @@ export class DataCatalog {
    * plain object.
    */
   static from(plainDataCatalog: PlainDataCatalog) {
-    return new DataCatalog(
-      plainDataCatalog.datasets,
-      plainDataCatalog.parameters
-    );
+    console.log(plainDataCatalog);
+    return new DataCatalog(plainDataCatalog);
   }
 }

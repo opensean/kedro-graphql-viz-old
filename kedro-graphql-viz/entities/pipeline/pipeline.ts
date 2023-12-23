@@ -1,5 +1,6 @@
 import type { PlainDataCatalog } from "@opensean/kedro-graphql-viz.entities.data-catalog"
 import { DataCatalog } from "@opensean/kedro-graphql-viz.entities.data-catalog"
+import { Parameter } from "@opensean/kedro-graphql-viz.entities.parameter"
 
 export type PlainPipeline = {
     /**
@@ -30,7 +31,7 @@ export type PlainPipeline = {
     /**
      * parameters
      */
-    parameters: [],
+    parameters: Parameter[],
 
     /**
      * status
@@ -134,7 +135,7 @@ export class Pipeline {
       this.version = version;
       this.parent = parent;
       this.dataCatalog = DataCatalog.from(dataCatalog);
-      this.parameters = parameters;
+      this.parameters = parameters.map((p) => Parameter.from(p));
       this.status = status;
       this.tags = tags;
       this.taskId = taskId;
@@ -162,7 +163,7 @@ export class Pipeline {
       version: this.version,
       parent: this.parent,
       dataCatalog: this.dataCatalog.toObject(),
-      parameters: this.parameters,
+      parameters: this.parameters.map((p) => p.toObject()),
       status: this.status,
       tags: this.tags,
       taskId: this.taskId,
@@ -187,25 +188,6 @@ export class Pipeline {
    */
   static from(plainPipeline: PlainPipeline) {
     return new Pipeline(
-      plainPipeline.id,
-      plainPipeline.name,
-      plainPipeline.version,
-      plainPipeline.parent,
-      plainPipeline.dataCatalog,
-      plainPipeline.parameters,
-      plainPipeline.status,
-      plainPipeline.tags,
-      plainPipeline.taskId,
-      plainPipeline.taskName,
-      plainPipeline.taskArgs,
-      plainPipeline.taskKwargs,
-      plainPipeline.taskRequest,
-      plainPipeline.taskException,
-      plainPipeline.taskTraceback,
-      plainPipeline.taskEinfo,
-      plainPipeline.taskResult,
-      plainPipeline.template,
-      plainPipeline.describe,
-      plainPipeline.nodes)
+      plainPipeline)
   }
 }

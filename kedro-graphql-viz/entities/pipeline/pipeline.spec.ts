@@ -7,6 +7,5 @@ it('has a Pipeline.from() method', () => {
 });
 
 it('pipeline.toObject() should be ' + JSON.stringify(mockPipeline), () => {
-  console.log(mockPipeline);
   expect(Pipeline.from(mockPipeline).toObject()).toEqual(mockPipeline);
 });

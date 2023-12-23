@@ -6,11 +6,9 @@ export const mockDataset = {
 };
 
 export const mockDatsets: PlainDataset[] = [
-  [
-    {
-      name: "example00",
-      config: {"type": "text.TextDataset", "filepath": "/tmp/text00.txt"},
-    },
-    mockDataset,
-  ]
+  {
+    name: "example00",
+    config: {"type": "text.TextDataset", "filepath": "/tmp/text00.txt"},
+  },
+  mockDataset,
 ];

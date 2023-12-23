@@ -1,21 +1,29 @@
 
 export type PlainParameter = {
+  /**
+   * name of the parameter
+   */
   name: string;
+  /**
+   * value of the parameter
+   */
+  value: string;
+  /**
+   * type used to cast parameter
+   */
+  type: string;
 }
 
 export class Parameter {
   constructor(
-    /**
-     * name of the parameter
-     */
-    readonly name: string,
-    /**
-     * value of the parameter
-     */
-    readonly value: string
+    {name,
+     value,
+     type
+    }: PlainParameter
   ) {
     this.name = name;
     this.value = value;
+    this.type = type;
   }
 
   /**
@@ -25,7 +33,8 @@ export class Parameter {
   toObject() {
     return {
       name: this.name,
-      value: this.value
+      value: this.value,
+      type: this.type
     };
   }
 
@@ -35,8 +44,7 @@ export class Parameter {
    */
   static from(plainParameter: PlainParameter) {
     return new Parameter(
-      plainParameter.name,
-      plainParameter.value,
+      plainParameter
     );
   }
 }

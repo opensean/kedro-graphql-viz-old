@@ -1,12 +1,14 @@
 import type { PlainPipeline } from './pipeline.js';
 import { mockDataCatalog } from '@opensean/kedro-graphql-viz.entities.data-catalog';
+import { mockParameter } from '@opensean/kedro-graphql-viz.entities.parameter';
+
 export const mockPipeline = {
   id: "100000000000000000000001",
   name: "example00",
   version: "0.1.0",
   parent: "100000000000000000000000",
   dataCatalog: mockDataCatalog,
-  parameters: [],
+  parameters: [mockParameter],
   status: "SUCCESS",
   tags: [{"name":"author", "value": "opensean"}],
   taskId: "",

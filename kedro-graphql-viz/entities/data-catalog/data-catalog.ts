@@ -34,7 +34,6 @@ export class DataCatalog {
    * plain object.
    */
   static from(plainDataCatalog: PlainDataCatalog) {
-    console.log(plainDataCatalog);
     return new DataCatalog(plainDataCatalog);
   }
 }

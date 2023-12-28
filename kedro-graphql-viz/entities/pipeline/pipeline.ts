@@ -1,6 +1,8 @@
 import type { PlainDataCatalog } from "@opensean/kedro-graphql-viz.entities.data-catalog"
 import { DataCatalog } from "@opensean/kedro-graphql-viz.entities.data-catalog"
-import { Parameter } from "@opensean/kedro-graphql-viz.entities.parameter"
+import { PlainParameter, Parameter } from "@opensean/kedro-graphql-viz.entities.parameter"
+import { PlainNode, Node } from "@opensean/kedro-graphql-viz.entities.node"
+import { PlainTag, Tag } from "@opensean/kedro-graphql-viz.entities.tag"
 
 export type PlainPipeline = {
     /**
@@ -31,7 +33,7 @@ export type PlainPipeline = {
     /**
      * parameters
      */
-    parameters: Parameter[],
+    parameters: PlainParameter[],
 
     /**
      * status
@@ -41,7 +43,7 @@ export type PlainPipeline = {
     /**
      * tags
      */
-    tags: [],
+    tags: PlainTag[],
 
     /**
      * task id
@@ -101,7 +103,7 @@ export type PlainPipeline = {
     /**
      * nodes
      */
-    nodes: []
+    nodes: PlainNode[]
 }
 
 export class Pipeline {
@@ -129,7 +131,6 @@ export class Pipeline {
 
 
   ) {
-      console.log(dataCatalog);
       this.id = id;
       this.name = name;
       this.version = version;
@@ -137,7 +138,7 @@ export class Pipeline {
       this.dataCatalog = DataCatalog.from(dataCatalog);
       this.parameters = parameters.map((p) => Parameter.from(p));
       this.status = status;
-      this.tags = tags;
+      this.tags = tags.map((t) => Tag.from(t));
       this.taskId = taskId;
       this.taskName = taskName;
       this.taskArgs = taskArgs;
@@ -149,7 +150,7 @@ export class Pipeline {
       this.taskResult = taskResult;
       this.template = template;
       this.describe = describe;
-      this.nodes = nodes;
+      this.nodes = nodes.map((n) => Node.from(n));
   }
 
   /**
@@ -165,7 +166,7 @@ export class Pipeline {
       dataCatalog: this.dataCatalog.toObject(),
       parameters: this.parameters.map((p) => p.toObject()),
       status: this.status,
-      tags: this.tags,
+      tags: this.tags.map((t) => t.toObject()),
       taskId: this.taskId,
       taskName: this.taskName,
       taskArgs: this.taskArgs,
@@ -177,7 +178,7 @@ export class Pipeline {
       taskResult: this.taskResult,
       template: this.template,
       describe: this.describe,
-      nodes: this.nodes,
+      nodes: this.nodes.map((n) => n.toObject()),
 
     };
   }

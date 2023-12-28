@@ -1,0 +1,23 @@
+---
+labels: ['node', 'entity']
+description: 'A Node entity.'
+---
+
+A component for a Node entity, supports serialization and de-serialization of Node objects and can be used from
+both backend and frontend.
+
+```ts
+const node = Node.from({
+  "name": "echo_node",
+  "inputs": [
+    "text_in",
+    "params:example",
+    "parameters"
+  ],
+  "outputs": [
+    "text_out"
+  ],
+  "tags": ["example_tag"]
+});
+```
+';

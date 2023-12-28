@@ -5,7 +5,7 @@ export type PlainDataCatalog = {
   /**
   * array of the DataSet objects.
   */
-  datasets: [PlainDataset]
+  datasets: PlainDataset[]
 }
 
 export class DataCatalog {

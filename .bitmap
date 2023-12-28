@@ -37,6 +37,20 @@
             }
         }
     },
+    "entities/node": {
+        "name": "entities/node",
+        "scope": "",
+        "version": "",
+        "defaultScope": "opensean.kedro-graphql-viz",
+        "mainFile": "index.ts",
+        "rootDir": "kedro-graphql-viz/entities/node",
+        "config": {
+            "teambit.node/node@1.0.31": {},
+            "teambit.envs/envs": {
+                "env": "teambit.node/node"
+            }
+        }
+    },
     "entities/parameter": {
         "name": "entities/parameter",
         "scope": "",
@@ -72,6 +86,20 @@
         "defaultScope": "opensean.kedro-graphql-viz",
         "mainFile": "index.ts",
         "rootDir": "kedro-graphql-viz/entities/pipeline-template",
+        "config": {
+            "teambit.node/node@1.0.31": {},
+            "teambit.envs/envs": {
+                "env": "teambit.node/node"
+            }
+        }
+    },
+    "entities/tag": {
+        "name": "entities/tag",
+        "scope": "",
+        "version": "",
+        "defaultScope": "opensean.kedro-graphql-viz",
+        "mainFile": "index.ts",
+        "rootDir": "kedro-graphql-viz/entities/tag",
         "config": {
             "teambit.node/node@1.0.31": {},
             "teambit.envs/envs": {

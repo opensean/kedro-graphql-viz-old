@@ -1,6 +1,9 @@
 import type { PlainPipeline } from './pipeline.js';
 import { mockDataCatalog } from '@opensean/kedro-graphql-viz.entities.data-catalog';
-import { mockParameter } from '@opensean/kedro-graphql-viz.entities.parameter';
+import { mockParameters } from '@opensean/kedro-graphql-viz.entities.parameter';
+import { mockNodes } from '@opensean/kedro-graphql-viz.entities.node';
+import { mockTags } from '@opensean/kedro-graphql-viz.entities.tag';
+import { mockPipelineTemplate } from '@opensean/kedro-graphql-viz.entities.pipeline-template';
 
 export const mockPipeline = {
   id: "100000000000000000000001",
@@ -8,9 +11,9 @@ export const mockPipeline = {
   version: "0.1.0",
   parent: "100000000000000000000000",
   dataCatalog: mockDataCatalog,
-  parameters: [mockParameter],
+  parameters: mockParameters,
   status: "SUCCESS",
-  tags: [{"name":"author", "value": "opensean"}],
+  tags: mockTags,
   taskId: "",
   taskName: "run_pipeline",
   taskArgs: "",
@@ -20,9 +23,9 @@ export const mockPipeline = {
   taskTraceback: "",
   taskEinfo: "",
   taskResult: "",
-  template: "",
+  template: mockPipelineTemplate,
   describe: "#### Pipeline execution order ####\nInputs: parameters, params:example, text_in\n\necho_node\n\nOutputs: text_out\n##################################",
-  nodes: []
+  nodes: mockNodes
 };
 
 export const mockPiplines: PlainPipeline[] = [

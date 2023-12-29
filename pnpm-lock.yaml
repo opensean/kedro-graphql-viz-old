@@ -19,13 +19,13 @@ importers:
         version: 0.0.4(eslint@8.55.0)(jest@29.3.1)(typescript@5.3.3)
       '@bitdev/vue.dev-services.preview.vue-docs-template':
         specifier: 0.0.2
-        version: 0.0.2(@types/react@18.2.45)(react-dom@17.0.2)(react@17.0.2)(vue@3.3.11)
+        version: 0.0.2(@types/react@18.2.45)(react-dom@18.2.0)(react@18.2.0)(vue@3.3.11)
       '@bitdev/vue.dev-services.preview.vue-mounter':
         specifier: 0.0.2
-        version: 0.0.2(react-dom@17.0.2)(react@17.0.2)(vue@3.3.11)
+        version: 0.0.2(react-dom@18.2.0)(react@18.2.0)(vue@3.3.11)
       '@bitdev/vue.dev-services.preview.vue-preview':
         specifier: 0.0.6
-        version: 0.0.6(@teambit/legacy@node_modules+@teambit+legacy)(@types/react@18.2.45)(less@4.2.0)(react-dom@17.0.2)(react@17.0.2)(vue@3.3.11)
+        version: 0.0.6(@teambit/legacy@node_modules+@teambit+legacy)(@types/react@18.2.45)(less@4.2.0)(react-dom@18.2.0)(react@18.2.0)(vue@3.3.11)
       '@bitdev/vue.dev-services.tester.vue-jest-config':
         specifier: 0.0.4
         version: 0.0.4(less@4.2.0)(sass@1.69.5)(typescript@5.3.3)(vue@3.3.11)
@@ -37,7 +37,7 @@ importers:
         version: 0.0.10(@teambit/legacy@node_modules+@teambit+legacy)(@types/node@18.19.3)(@types/react@18.2.45)
       '@mdx-js/react':
         specifier: 1.6.22
-        version: 1.6.22(react@17.0.2)
+        version: 1.6.22(react@18.2.0)
       '@teambit/defender.eslint-linter':
         specifier: 1.0.8
         version: 1.0.8(@teambit/legacy@node_modules+@teambit+legacy)
@@ -49,10 +49,10 @@ importers:
         version: 1.0.2(@teambit/legacy@node_modules+@teambit+legacy)
       '@teambit/dependencies.modules.packages-excluder':
         specifier: 1.0.4
-        version: 1.0.4(react@17.0.2)
+        version: 1.0.4(react@18.2.0)
       '@teambit/mdx.ui.mdx-scope-context':
         specifier: 1.0.0
-        version: 1.0.0(react-dom@17.0.2)(react@17.0.2)
+        version: 1.0.0(react-dom@18.2.0)(react@18.2.0)
       '@teambit/typescript.typescript-compiler':
         specifier: 2.0.7
         version: 2.0.7(@teambit/legacy@node_modules+@teambit+legacy)
@@ -66,11 +66,11 @@ importers:
         specifier: '>=4.2.0 <5.0.0'
         version: 4.2.0
       react:
-        specifier: '>=16.8.0 <17.0.0 || >=17.0.0 <18.0.0'
-        version: 17.0.2
+        specifier: '>=18.0.0 <19.0.0'
+        version: 18.2.0
       react-dom:
-        specifier: '>=16.8.0 <17.0.0 || >=17.0.0 <18.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.0.0 <19.0.0'
+        version: 18.2.0(react@18.2.0)
       sass:
         specifier: '>=1.62.1 <2.0.0'
         version: 1.69.5
@@ -86,7 +86,7 @@ importers:
     devDependencies:
       '@teambit/envs.docs.env-overview-template':
         specifier: 0.0.2
-        version: 0.0.2(react-dom@17.0.2)(react@17.0.2)
+        version: 0.0.2(react-dom@18.2.0)(react@18.2.0)
       '@teambit/node.node':
         specifier: 1.0.31
         version: 1.0.31(@teambit/legacy@node_modules+@teambit+legacy)(@types/node@18.19.3)(@types/react@18.2.45)(less@4.2.0)
@@ -138,6 +138,146 @@ importers:
         version: 18.19.3
 
   kedro-graphql-viz/entities/dataset:
+    dependencies:
+      '@mdx-js/react':
+        specifier: 1.6.22
+        version: 1.6.22(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context':
+        specifier: 1.0.0
+        version: 1.0.0(react-dom@18.2.0)(react@18.2.0)
+      jest:
+        specifier: 29.3.1
+        version: 29.3.1(@types/node@18.19.3)
+      react:
+        specifier: ^18.0.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.0.0
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@teambit/node.node':
+        specifier: 1.0.31
+        version: 1.0.31(@teambit/legacy@node_modules+@teambit+legacy)(@types/node@18.19.3)(@types/react@18.2.45)(less@4.2.0)
+      '@types/jest':
+        specifier: ^29.2.2
+        version: 29.5.11
+      '@types/node':
+        specifier: ^18.11.9
+        version: 18.19.3
+
+  kedro-graphql-viz/entities/node:
+    dependencies:
+      '@mdx-js/react':
+        specifier: 1.6.22
+        version: 1.6.22(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context':
+        specifier: 1.0.0
+        version: 1.0.0(react-dom@18.2.0)(react@18.2.0)
+      jest:
+        specifier: 29.3.1
+        version: 29.3.1(@types/node@18.19.3)
+      react:
+        specifier: ^18.0.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.0.0
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@teambit/node.node':
+        specifier: 1.0.31
+        version: 1.0.31(@teambit/legacy@node_modules+@teambit+legacy)(@types/node@18.19.3)(@types/react@18.2.45)(less@4.2.0)
+      '@types/jest':
+        specifier: ^29.2.2
+        version: 29.5.11
+      '@types/node':
+        specifier: ^18.11.9
+        version: 18.19.3
+
+  kedro-graphql-viz/entities/parameter:
+    dependencies:
+      '@mdx-js/react':
+        specifier: 1.6.22
+        version: 1.6.22(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context':
+        specifier: 1.0.0
+        version: 1.0.0(react-dom@18.2.0)(react@18.2.0)
+      jest:
+        specifier: 29.3.1
+        version: 29.3.1(@types/node@18.19.3)
+      react:
+        specifier: ^18.0.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.0.0
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@teambit/node.node':
+        specifier: 1.0.31
+        version: 1.0.31(@teambit/legacy@node_modules+@teambit+legacy)(@types/node@18.19.3)(@types/react@18.2.45)(less@4.2.0)
+      '@types/jest':
+        specifier: ^29.2.2
+        version: 29.5.11
+      '@types/node':
+        specifier: ^18.11.9
+        version: 18.19.3
+
+  kedro-graphql-viz/entities/pipeline:
+    dependencies:
+      '@mdx-js/react':
+        specifier: 1.6.22
+        version: 1.6.22(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context':
+        specifier: 1.0.0
+        version: 1.0.0(react-dom@18.2.0)(react@18.2.0)
+      jest:
+        specifier: 29.3.1
+        version: 29.3.1(@types/node@18.19.3)
+      react:
+        specifier: ^18.0.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.0.0
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@teambit/node.node':
+        specifier: 1.0.31
+        version: 1.0.31(@teambit/legacy@node_modules+@teambit+legacy)(@types/node@18.19.3)(@types/react@18.2.45)(less@4.2.0)
+      '@types/jest':
+        specifier: ^29.2.2
+        version: 29.5.11
+      '@types/node':
+        specifier: ^18.11.9
+        version: 18.19.3
+
+  kedro-graphql-viz/entities/pipeline-template:
+    dependencies:
+      '@mdx-js/react':
+        specifier: 1.6.22
+        version: 1.6.22(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context':
+        specifier: 1.0.0
+        version: 1.0.0(react-dom@18.2.0)(react@18.2.0)
+      jest:
+        specifier: 29.3.1
+        version: 29.3.1(@types/node@18.19.3)
+      react:
+        specifier: ^18.0.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.0.0
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@teambit/node.node':
+        specifier: 1.0.31
+        version: 1.0.31(@teambit/legacy@node_modules+@teambit+legacy)(@types/node@18.19.3)(@types/react@18.2.45)(less@4.2.0)
+      '@types/jest':
+        specifier: ^29.2.2
+        version: 29.5.11
+      '@types/node':
+        specifier: ^18.11.9
+        version: 18.19.3
+
+  kedro-graphql-viz/entities/tag:
     dependencies:
       '@mdx-js/react':
         specifier: 1.6.22
@@ -311,9 +451,24 @@ importers:
       '@opensean/kedro-graphql-viz.entities.dataset':
         specifier: workspace:*
         version: file:kedro-graphql-viz/entities/dataset(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.node':
+        specifier: workspace:*
+        version: file:kedro-graphql-viz/entities/node(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.parameter':
+        specifier: workspace:*
+        version: file:kedro-graphql-viz/entities/parameter(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.pipeline':
+        specifier: workspace:*
+        version: file:kedro-graphql-viz/entities/pipeline(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.pipeline-template':
+        specifier: workspace:*
+        version: file:kedro-graphql-viz/entities/pipeline-template(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.tag':
+        specifier: workspace:*
+        version: file:kedro-graphql-viz/entities/tag(@types/node@18.19.3)
       '@opensean/kedro-graphql-viz.envs.my-vue-env':
         specifier: workspace:*
-        version: file:kedro-graphql-viz/envs/my-vue-env(@teambit/legacy@node_modules+@teambit+legacy)(@types/node@18.19.3)(@types/react@18.2.45)(react-dom@17.0.2)(react@17.0.2)
+        version: file:kedro-graphql-viz/envs/my-vue-env(@teambit/legacy@node_modules+@teambit+legacy)(@types/node@18.19.3)(@types/react@18.2.45)(react-dom@18.2.0)(react@18.2.0)
       '@opensean/kedro-graphql-viz.envs.my-vue-wrapper':
         specifier: workspace:*
         version: file:kedro-graphql-viz/envs/my-vue-wrapper(@types/node@18.19.3)
@@ -337,6 +492,16 @@ importers:
         injected: true
       '@opensean/kedro-graphql-viz.entities.dataset':
         injected: true
+      '@opensean/kedro-graphql-viz.entities.node':
+        injected: true
+      '@opensean/kedro-graphql-viz.entities.parameter':
+        injected: true
+      '@opensean/kedro-graphql-viz.entities.pipeline':
+        injected: true
+      '@opensean/kedro-graphql-viz.entities.pipeline-template':
+        injected: true
+      '@opensean/kedro-graphql-viz.entities.tag':
+        injected: true
       '@opensean/kedro-graphql-viz.envs.my-vue-env':
         injected: true
       '@opensean/kedro-graphql-viz.envs.my-vue-wrapper':
@@ -352,9 +517,24 @@ importers:
       '@opensean/kedro-graphql-viz.entities.dataset':
         specifier: workspace:*
         version: file:kedro-graphql-viz/entities/dataset(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.node':
+        specifier: workspace:*
+        version: file:kedro-graphql-viz/entities/node(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.parameter':
+        specifier: workspace:*
+        version: file:kedro-graphql-viz/entities/parameter(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.pipeline':
+        specifier: workspace:*
+        version: file:kedro-graphql-viz/entities/pipeline(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.pipeline-template':
+        specifier: workspace:*
+        version: file:kedro-graphql-viz/entities/pipeline-template(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.tag':
+        specifier: workspace:*
+        version: file:kedro-graphql-viz/entities/tag(@types/node@18.19.3)
       '@opensean/kedro-graphql-viz.envs.my-vue-env':
         specifier: workspace:*
-        version: file:kedro-graphql-viz/envs/my-vue-env(@teambit/legacy@node_modules+@teambit+legacy)(@types/node@18.19.3)(@types/react@18.2.45)(react-dom@17.0.2)(react@17.0.2)
+        version: file:kedro-graphql-viz/envs/my-vue-env(@teambit/legacy@node_modules+@teambit+legacy)(@types/node@18.19.3)(@types/react@18.2.45)(react-dom@18.2.0)(react@18.2.0)
       '@opensean/kedro-graphql-viz.envs.my-vue-wrapper':
         specifier: workspace:*
         version: file:kedro-graphql-viz/envs/my-vue-wrapper(@types/node@18.19.3)
@@ -378,6 +558,16 @@ importers:
         injected: true
       '@opensean/kedro-graphql-viz.entities.dataset':
         injected: true
+      '@opensean/kedro-graphql-viz.entities.node':
+        injected: true
+      '@opensean/kedro-graphql-viz.entities.parameter':
+        injected: true
+      '@opensean/kedro-graphql-viz.entities.pipeline':
+        injected: true
+      '@opensean/kedro-graphql-viz.entities.pipeline-template':
+        injected: true
+      '@opensean/kedro-graphql-viz.entities.tag':
+        injected: true
       '@opensean/kedro-graphql-viz.envs.my-vue-env':
         injected: true
       '@opensean/kedro-graphql-viz.envs.my-vue-wrapper':
@@ -393,6 +583,21 @@ importers:
       '@opensean/kedro-graphql-viz.entities.dataset':
         specifier: workspace:*
         version: file:kedro-graphql-viz/entities/dataset(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.node':
+        specifier: workspace:*
+        version: file:kedro-graphql-viz/entities/node(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.parameter':
+        specifier: workspace:*
+        version: file:kedro-graphql-viz/entities/parameter(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.pipeline':
+        specifier: workspace:*
+        version: file:kedro-graphql-viz/entities/pipeline(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.pipeline-template':
+        specifier: workspace:*
+        version: file:kedro-graphql-viz/entities/pipeline-template(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.tag':
+        specifier: workspace:*
+        version: file:kedro-graphql-viz/entities/tag(@types/node@18.19.3)
       '@opensean/kedro-graphql-viz.envs.my-vue-env':
         specifier: workspace:*
         version: file:kedro-graphql-viz/envs/my-vue-env(@teambit/legacy@node_modules+@teambit+legacy)(@types/node@18.19.3)(@types/react@18.2.45)(react-dom@17.0.2)(react@17.0.2)
@@ -413,6 +618,16 @@ importers:
         injected: true
       '@opensean/kedro-graphql-viz.entities.dataset':
         injected: true
+      '@opensean/kedro-graphql-viz.entities.node':
+        injected: true
+      '@opensean/kedro-graphql-viz.entities.parameter':
+        injected: true
+      '@opensean/kedro-graphql-viz.entities.pipeline':
+        injected: true
+      '@opensean/kedro-graphql-viz.entities.pipeline-template':
+        injected: true
+      '@opensean/kedro-graphql-viz.entities.tag':
+        injected: true
       '@opensean/kedro-graphql-viz.envs.my-vue-env':
         injected: true
       '@opensean/kedro-graphql-viz.envs.my-vue-wrapper':
@@ -431,6 +646,21 @@ importers:
       '@opensean/kedro-graphql-viz.entities.dataset':
         specifier: workspace:*
         version: file:kedro-graphql-viz/entities/dataset(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.node':
+        specifier: workspace:*
+        version: file:kedro-graphql-viz/entities/node(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.parameter':
+        specifier: workspace:*
+        version: file:kedro-graphql-viz/entities/parameter(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.pipeline':
+        specifier: workspace:*
+        version: file:kedro-graphql-viz/entities/pipeline(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.pipeline-template':
+        specifier: workspace:*
+        version: file:kedro-graphql-viz/entities/pipeline-template(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.tag':
+        specifier: workspace:*
+        version: file:kedro-graphql-viz/entities/tag(@types/node@18.19.3)
       '@opensean/kedro-graphql-viz.envs.my-vue-env':
         specifier: workspace:*
         version: file:kedro-graphql-viz/envs/my-vue-env(@teambit/legacy@node_modules+@teambit+legacy)(@types/node@18.19.3)(@types/react@18.2.45)(react-dom@18.2.0)(react@18.2.0)
@@ -459,6 +689,16 @@ importers:
       '@opensean/kedro-graphql-viz.entities.data-catalog':
         injected: true
       '@opensean/kedro-graphql-viz.entities.dataset':
+        injected: true
+      '@opensean/kedro-graphql-viz.entities.node':
+        injected: true
+      '@opensean/kedro-graphql-viz.entities.parameter':
+        injected: true
+      '@opensean/kedro-graphql-viz.entities.pipeline':
+        injected: true
+      '@opensean/kedro-graphql-viz.entities.pipeline-template':
+        injected: true
+      '@opensean/kedro-graphql-viz.entities.tag':
         injected: true
       '@opensean/kedro-graphql-viz.envs.my-vue-env':
         injected: true
@@ -13009,6 +13249,22 @@ packages:
       react-dom: 17.0.2(react@17.0.2)
     dev: true
 
+  /@teambit/envs.docs.env-overview-template@0.0.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha1-i9rRdKM/9feF9NPDEI0nkjQhRSc=}
+    peerDependencies:
+      react: '*'
+      react-dom: '*'
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      core-js: 3.34.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
   /@teambit/evangelist.elements.icon@1.0.2(react-dom@17.0.2)(react@17.0.2):
     resolution: {integrity: sha512-OoqGwKyhQDETfLYTebBOGUeISdix6eyj9cT3iQoVMtZlcIGOJlQqccDsFbjnhOUMFoI9IbtqTaGL7ymCGbA8rw==}
     peerDependencies:
@@ -13440,23 +13696,6 @@ packages:
       - '@testing-library/react'
       - '@types/react'
       - typescript
-
-  /@teambit/mdx.ui.mdx-scope-context@1.0.0(react-dom@17.0.2)(react@17.0.2):
-    resolution: {integrity: sha512-0iaAXiMh0kzHEi6ufS6qman7QrB+J+6PwpCibAtzbjXaH8FHUX7v6r+eV7BFt8zrtTEiUOFz7g1hax5ZOmUKRw==}
-    engines: {node: '>=12.22.0'}
-    peerDependencies:
-      react: '*'
-      react-dom: '*'
-    peerDependenciesMeta:
-      react:
-        optional: true
-      react-dom:
-        optional: true
-    dependencies:
-      core-js: 3.34.0
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    dev: false
 
   /@teambit/mdx.ui.mdx-scope-context@1.0.0(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-0iaAXiMh0kzHEi6ufS6qman7QrB+J+6PwpCibAtzbjXaH8FHUX7v6r+eV7BFt8zrtTEiUOFz7g1hax5ZOmUKRw==}
@@ -28124,6 +28363,103 @@ packages:
       - ts-node
     dev: false
 
+  file:kedro-graphql-viz/entities/node(@types/node@18.19.3):
+    resolution: {directory: kedro-graphql-viz/entities/node, type: directory}
+    id: file:kedro-graphql-viz/entities/node
+    name: '@opensean/kedro-graphql-viz.entities.node'
+    dependencies:
+      '@mdx-js/react': 1.6.22(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context': 1.0.0(react-dom@18.2.0)(react@18.2.0)
+      jest: 29.3.1(@types/node@18.19.3)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - '@types/node'
+      - babel-plugin-macros
+      - node-notifier
+      - supports-color
+      - ts-node
+    dev: false
+
+  file:kedro-graphql-viz/entities/parameter(@types/node@18.19.3):
+    resolution: {directory: kedro-graphql-viz/entities/parameter, type: directory}
+    id: file:kedro-graphql-viz/entities/parameter
+    name: '@opensean/kedro-graphql-viz.entities.parameter'
+    dependencies:
+      '@mdx-js/react': 1.6.22(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context': 1.0.0(react-dom@18.2.0)(react@18.2.0)
+      jest: 29.3.1(@types/node@18.19.3)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - '@types/node'
+      - babel-plugin-macros
+      - node-notifier
+      - supports-color
+      - ts-node
+    dev: false
+
+  file:kedro-graphql-viz/entities/pipeline(@types/node@18.19.3):
+    resolution: {directory: kedro-graphql-viz/entities/pipeline, type: directory}
+    id: file:kedro-graphql-viz/entities/pipeline
+    name: '@opensean/kedro-graphql-viz.entities.pipeline'
+    dependencies:
+      '@mdx-js/react': 1.6.22(react@18.2.0)
+      '@opensean/kedro-graphql-viz.entities.data-catalog': file:kedro-graphql-viz/entities/data-catalog(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.node': file:kedro-graphql-viz/entities/node(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.parameter': file:kedro-graphql-viz/entities/parameter(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.pipeline-template': file:kedro-graphql-viz/entities/pipeline-template(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.tag': file:kedro-graphql-viz/entities/tag(@types/node@18.19.3)
+      '@teambit/mdx.ui.mdx-scope-context': 1.0.0(react-dom@18.2.0)(react@18.2.0)
+      jest: 29.3.1(@types/node@18.19.3)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - '@types/node'
+      - babel-plugin-macros
+      - node-notifier
+      - supports-color
+      - ts-node
+    dev: false
+
+  file:kedro-graphql-viz/entities/pipeline-template(@types/node@18.19.3):
+    resolution: {directory: kedro-graphql-viz/entities/pipeline-template, type: directory}
+    id: file:kedro-graphql-viz/entities/pipeline-template
+    name: '@opensean/kedro-graphql-viz.entities.pipeline-template'
+    dependencies:
+      '@mdx-js/react': 1.6.22(react@18.2.0)
+      '@opensean/kedro-graphql-viz.entities.node': file:kedro-graphql-viz/entities/node(@types/node@18.19.3)
+      '@opensean/kedro-graphql-viz.entities.parameter': file:kedro-graphql-viz/entities/parameter(@types/node@18.19.3)
+      '@teambit/mdx.ui.mdx-scope-context': 1.0.0(react-dom@18.2.0)(react@18.2.0)
+      jest: 29.3.1(@types/node@18.19.3)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - '@types/node'
+      - babel-plugin-macros
+      - node-notifier
+      - supports-color
+      - ts-node
+    dev: false
+
+  file:kedro-graphql-viz/entities/tag(@types/node@18.19.3):
+    resolution: {directory: kedro-graphql-viz/entities/tag, type: directory}
+    id: file:kedro-graphql-viz/entities/tag
+    name: '@opensean/kedro-graphql-viz.entities.tag'
+    dependencies:
+      '@mdx-js/react': 1.6.22(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context': 1.0.0(react-dom@18.2.0)(react@18.2.0)
+      jest: 29.3.1(@types/node@18.19.3)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - '@types/node'
+      - babel-plugin-macros
+      - node-notifier
+      - supports-color
+      - ts-node
+    dev: false
+
   file:kedro-graphql-viz/envs/my-vue-env(@teambit/legacy@node_modules+@teambit+legacy)(@types/node@18.19.3)(@types/react@18.2.45)(react-dom@17.0.2)(react@17.0.2):
     resolution: {directory: kedro-graphql-viz/envs/my-vue-env, type: directory}
     id: file:kedro-graphql-viz/envs/my-vue-env
@@ -28300,6 +28636,7 @@ packages:
       vue:
         optional: true
     dependencies:
+      '@opensean/kedro-graphql-viz.entities.data-catalog': file:kedro-graphql-viz/entities/data-catalog(@types/node@18.19.3)
       jest: 29.3.1(@types/node@18.19.3)
       less: 4.2.0
       sass: 1.69.5

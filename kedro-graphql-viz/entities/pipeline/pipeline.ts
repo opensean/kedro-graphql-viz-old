@@ -3,6 +3,7 @@ import { DataCatalog } from "@opensean/kedro-graphql-viz.entities.data-catalog"
 import { PlainParameter, Parameter } from "@opensean/kedro-graphql-viz.entities.parameter"
 import { PlainNode, Node } from "@opensean/kedro-graphql-viz.entities.node"
 import { PlainTag, Tag } from "@opensean/kedro-graphql-viz.entities.tag"
+import { PlainPipelineTemplate, PipelineTemplate } from "@opensean/kedro-graphql-viz.entities.pipeline-template"
 
 export type PlainPipeline = {
     /**
@@ -93,7 +94,7 @@ export type PlainPipeline = {
     /**
      * pipeline template
      */
-    template: string,
+    template: PlainPipelineTemplate,
 
     /**
      * description
@@ -148,7 +149,7 @@ export class Pipeline {
       this.taskTraceback = taskTraceback;
       this.taskEinfo = taskEinfo;
       this.taskResult = taskResult;
-      this.template = template;
+      this.template = PipelineTemplate.from(template);
       this.describe = describe;
       this.nodes = nodes.map((n) => Node.from(n));
   }
@@ -176,7 +177,7 @@ export class Pipeline {
       taskTraceback: this.taskTraceback,
       taskEinfo: this.taskEinfo,
       taskResult: this.taskResult,
-      template: this.template,
+      template: this.template.toObject(),
       describe: this.describe,
       nodes: this.nodes.map((n) => n.toObject()),
 

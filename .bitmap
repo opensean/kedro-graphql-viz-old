@@ -9,6 +9,34 @@
  */
 
 {
+    "composables/apollo-client": {
+        "name": "composables/apollo-client",
+        "scope": "",
+        "version": "",
+        "defaultScope": "opensean.kedro-graphql-viz",
+        "mainFile": "index.ts",
+        "rootDir": "kedro-graphql-viz/composables/apollo-client",
+        "config": {
+            "opensean.kedro-graphql-viz/envs/my-vue-env": {},
+            "teambit.envs/envs": {
+                "env": "opensean.kedro-graphql-viz/envs/my-vue-env"
+            }
+        }
+    },
+    "composables/pipeline": {
+        "name": "composables/pipeline",
+        "scope": "",
+        "version": "",
+        "defaultScope": "opensean.kedro-graphql-viz",
+        "mainFile": "index.ts",
+        "rootDir": "kedro-graphql-viz/composables/pipeline",
+        "config": {
+            "opensean.kedro-graphql-viz/envs/my-vue-env": {},
+            "teambit.envs/envs": {
+                "env": "opensean.kedro-graphql-viz/envs/my-vue-env"
+            }
+        }
+    },
     "entities/data-catalog": {
         "name": "entities/data-catalog",
         "scope": "",

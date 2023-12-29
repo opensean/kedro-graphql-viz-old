@@ -4,7 +4,7 @@ const {
 } = require('@teambit/dependencies.modules.packages-excluder');
 
 // Override the Jest config to ignore transpiling from specific folders
-const packagesToExclude = ['@teambit'];
+const packagesToExclude = ['@teambit', '@apollo'];
 
 const transformIgnorePatterns = [
   generateNodeModulesPattern({

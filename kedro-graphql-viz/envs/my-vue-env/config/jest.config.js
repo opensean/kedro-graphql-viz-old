@@ -16,4 +16,5 @@ const transformIgnorePatterns = [
 module.exports = {
   ...vueJestConfig,
   transformIgnorePatterns,
+  setupFiles: [__dirname + '/jest.polyfills.js'],
 };

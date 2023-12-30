@@ -28,6 +28,6 @@ export const mockPipeline = {
   nodes: mockNodes
 };
 
-export const mockPiplines: PlainPipeline[] = [
+export const mockPipelines: PlainPipeline[] = [
     mockPipeline
 ];

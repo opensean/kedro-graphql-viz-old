@@ -4,7 +4,7 @@ import { graphql, HttpResponse } from 'msw'
 
 import { setupServer } from 'msw/node'
 
-import { mockPipelines } from '@opensean/kedro-graphql-viz.entities.pipeline'
+import { aPipelines } from "@opensean/kedro-graphql-viz.modules.codegen"
 
 
 import { BasicPipelines } from './pipelines.composition'
@@ -13,11 +13,11 @@ import { BasicPipelines } from './pipelines.composition'
 const server = setupServer(
 
   graphql.query('pipelines', ({query, variables}) => {
-
+    console.log('INTERCEPTED a "pipelines" GraphQL query:', query)
     return HttpResponse.json({
       data: {
         pipelines: {
-          pipelines: mockPipelines,
+          pipelines: aPipelines,
           pageMeta: {
             count: 1,
             nextCursor: null
@@ -38,9 +38,9 @@ test('basic case', async () => {
 
   const { findByText } = render(BasicPipelines)
 
-  //const result = await findByText('Barry Allen')
+  const result = await findByText('_typename')
 
-  //expect(result).toBeTruthy()
+  expect(result).toBeTruthy()
 
   server.close()
 

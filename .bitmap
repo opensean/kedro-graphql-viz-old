@@ -209,6 +209,20 @@
             "bitdev.vue/vue-env@0.0.10": {}
         }
     },
+    "modules/codegen": {
+        "name": "modules/codegen",
+        "scope": "",
+        "version": "",
+        "defaultScope": "opensean.kedro-graphql-viz",
+        "mainFile": "index.ts",
+        "rootDir": "kedro-graphql-viz/modules/codegen",
+        "config": {
+            "teambit.node/node@1.0.33": {},
+            "teambit.envs/envs": {
+                "env": "teambit.node/node"
+            }
+        }
+    },
     "ui/data-catalog-browser": {
         "name": "ui/data-catalog-browser",
         "scope": "",

@@ -3,7 +3,7 @@
 import { usePipelines } from './pipelines';
 
 
-const pipelines = usePipelines();
+const { pipelines } = usePipelines();
 
 </script>
 

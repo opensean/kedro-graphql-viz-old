@@ -53,6 +53,7 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
+        "@apollo/client": "^3.8.8",
         "@bitdev/vue.dev-services.compiler.vue-compiler": "0.0.4",
         "@bitdev/vue.dev-services.linter.vue-eslint-config": "0.0.4",
         "@bitdev/vue.dev-services.preview.vue-docs-template": "0.0.2",
@@ -61,6 +62,10 @@
         "@bitdev/vue.dev-services.tester.vue-jest-config": "0.0.4",
         "@bitdev/vue.envs.vue-env": "0.0.11",
         "@bitdev/vue.vue-env": "0.0.10",
+        "@graphql-codegen/cli": "^5.0.0",
+        "@graphql-codegen/client-preset": "^4.1.0",
+        "@graphql-codegen/near-operation-file-preset": "^3.0.0",
+        "@graphql-codegen/typescript-vue-apollo": "^4.1.0",
         "@teambit/defender.eslint-linter": "1.0.8",
         "@teambit/defender.jest-tester": "1.0.5",
         "@teambit/defender.prettier-formatter": "1.0.2",
@@ -68,8 +73,13 @@
         "@teambit/envs.docs.env-overview-template": "0.0.2",
         "@teambit/typescript.typescript-compiler": "2.0.7",
         "@vue/apollo-composable": "^4.0.0-beta.12",
+        "cross-fetch": "^4.0.0",
+        "graphql": "^16.8.1",
+        "graphql-codegen-typescript-mock-data": "^3.7.1",
         "graphql-tag": "^2.12.6",
         "msw": "^2.0.11",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.3.3",
         "undici": "^6.2.1",
         "vue-json-pretty": "^2.3.0",
         "vuetify": "^3.4.9"

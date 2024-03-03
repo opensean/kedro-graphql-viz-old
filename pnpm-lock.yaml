@@ -519,14 +519,26 @@ importers:
         specifier: ^29.3.1
         version: 29.5.11
 
-  kedro-graphql-viz/modules/entities:
+  kedro-graphql-viz/modules/codegen:
     dependencies:
+      '@graphql-codegen/cli':
+        specifier: ^5.0.0
+        version: 5.0.0(@types/node@18.19.3)(graphql@16.8.1)(typescript@5.3.3)
       '@mdx-js/react':
         specifier: 1.6.22
         version: 1.6.22(react@18.2.0)
       '@teambit/mdx.ui.mdx-scope-context':
         specifier: 1.0.0
         version: 1.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@vue/apollo-composable':
+        specifier: ^4.0.0-beta.12
+        version: 4.0.0-beta.12(@apollo/client@3.8.8)(graphql@16.8.1)(typescript@5.3.3)(vue@3.4.0)
+      graphql:
+        specifier: ^16.8.1
+        version: 16.8.1
+      graphql-tag:
+        specifier: ^2.12.6
+        version: 2.12.6(graphql@16.8.1)
       jest:
         specifier: 29.3.1
         version: 29.3.1(@types/node@18.19.3)(ts-node@10.9.2)
@@ -610,9 +622,9 @@ importers:
       '@opensean/kedro-graphql-viz.envs.my-vue-wrapper':
         specifier: workspace:*
         version: file:kedro-graphql-viz/envs/my-vue-wrapper(@types/node@18.19.3)(ts-node@10.9.2)(typescript@5.3.3)
-      '@opensean/kedro-graphql-viz.modules.entities':
+      '@opensean/kedro-graphql-viz.modules.codegen':
         specifier: workspace:*
-        version: file:kedro-graphql-viz/modules/entities(@types/node@18.19.3)(ts-node@10.9.2)
+        version: file:kedro-graphql-viz/modules/codegen(@apollo/client@3.8.8)(@types/node@18.19.3)(ts-node@10.9.2)(typescript@5.3.3)(vue@3.3.11)
       '@opensean/kedro-graphql-viz.ui.data-catalog-browser':
         specifier: workspace:*
         version: file:kedro-graphql-viz/ui/data-catalog-browser(@types/node@18.19.3)(ts-node@10.9.2)(vue@3.3.11)
@@ -651,7 +663,7 @@ importers:
         injected: true
       '@opensean/kedro-graphql-viz.envs.my-vue-wrapper':
         injected: true
-      '@opensean/kedro-graphql-viz.modules.entities':
+      '@opensean/kedro-graphql-viz.modules.codegen':
         injected: true
       '@opensean/kedro-graphql-viz.ui.data-catalog-browser':
         injected: true
@@ -691,9 +703,9 @@ importers:
       '@opensean/kedro-graphql-viz.envs.my-vue-wrapper':
         specifier: workspace:*
         version: file:kedro-graphql-viz/envs/my-vue-wrapper(@types/node@18.19.3)(ts-node@10.9.2)(typescript@5.3.3)
-      '@opensean/kedro-graphql-viz.modules.entities':
+      '@opensean/kedro-graphql-viz.modules.codegen':
         specifier: workspace:*
-        version: file:kedro-graphql-viz/modules/entities(@types/node@18.19.3)(ts-node@10.9.2)
+        version: file:kedro-graphql-viz/modules/codegen(@apollo/client@3.8.8)(@types/node@18.19.3)(ts-node@10.9.2)(typescript@5.3.3)(vue@3.3.11)
       '@opensean/kedro-graphql-viz.ui.data-catalog-browser':
         specifier: workspace:*
         version: file:kedro-graphql-viz/ui/data-catalog-browser(@types/node@18.19.3)(ts-node@10.9.2)(vue@3.3.11)
@@ -732,7 +744,7 @@ importers:
         injected: true
       '@opensean/kedro-graphql-viz.envs.my-vue-wrapper':
         injected: true
-      '@opensean/kedro-graphql-viz.modules.entities':
+      '@opensean/kedro-graphql-viz.modules.codegen':
         injected: true
       '@opensean/kedro-graphql-viz.ui.data-catalog-browser':
         injected: true
@@ -772,9 +784,9 @@ importers:
       '@opensean/kedro-graphql-viz.envs.my-vue-wrapper':
         specifier: workspace:*
         version: file:kedro-graphql-viz/envs/my-vue-wrapper(@types/node@18.19.3)(ts-node@10.9.2)(typescript@5.3.3)
-      '@opensean/kedro-graphql-viz.modules.entities':
+      '@opensean/kedro-graphql-viz.modules.codegen':
         specifier: workspace:*
-        version: file:kedro-graphql-viz/modules/entities(@types/node@18.19.3)(ts-node@10.9.2)
+        version: file:kedro-graphql-viz/modules/codegen(@apollo/client@3.8.8)(@types/node@18.19.3)(ts-node@10.9.2)(typescript@5.3.3)(vue@3.4.0)
       '@opensean/kedro-graphql-viz.ui.data-catalog-browser':
         specifier: workspace:*
         version: file:kedro-graphql-viz/ui/data-catalog-browser(@types/node@18.19.3)(ts-node@10.9.2)(vue@3.4.0)
@@ -807,7 +819,7 @@ importers:
         injected: true
       '@opensean/kedro-graphql-viz.envs.my-vue-wrapper':
         injected: true
-      '@opensean/kedro-graphql-viz.modules.entities':
+      '@opensean/kedro-graphql-viz.modules.codegen':
         injected: true
       '@opensean/kedro-graphql-viz.ui.data-catalog-browser':
         injected: true
@@ -850,9 +862,9 @@ importers:
       '@opensean/kedro-graphql-viz.envs.my-vue-wrapper':
         specifier: workspace:*
         version: file:kedro-graphql-viz/envs/my-vue-wrapper(@types/node@18.19.3)(ts-node@10.9.2)(typescript@5.3.3)
-      '@opensean/kedro-graphql-viz.modules.entities':
+      '@opensean/kedro-graphql-viz.modules.codegen':
         specifier: workspace:*
-        version: file:kedro-graphql-viz/modules/entities(@types/node@18.19.3)(ts-node@10.9.2)
+        version: file:kedro-graphql-viz/modules/codegen(@apollo/client@3.8.8)(@types/node@18.19.3)(ts-node@10.9.2)(typescript@5.3.3)(vue@3.4.0)
       '@opensean/kedro-graphql-viz.ui.data-catalog-browser':
         specifier: workspace:*
         version: file:kedro-graphql-viz/ui/data-catalog-browser(@types/node@18.19.3)(ts-node@10.9.2)(vue@3.4.0)
@@ -894,7 +906,7 @@ importers:
         injected: true
       '@opensean/kedro-graphql-viz.envs.my-vue-wrapper':
         injected: true
-      '@opensean/kedro-graphql-viz.modules.entities':
+      '@opensean/kedro-graphql-viz.modules.codegen':
         injected: true
       '@opensean/kedro-graphql-viz.ui.data-catalog-browser':
         injected: true
@@ -937,9 +949,9 @@ importers:
       '@opensean/kedro-graphql-viz.envs.my-vue-wrapper':
         specifier: workspace:*
         version: file:kedro-graphql-viz/envs/my-vue-wrapper(@types/node@18.19.3)(ts-node@10.9.2)(typescript@5.3.3)
-      '@opensean/kedro-graphql-viz.modules.entities':
+      '@opensean/kedro-graphql-viz.modules.codegen':
         specifier: workspace:*
-        version: file:kedro-graphql-viz/modules/entities(@types/node@18.19.3)(ts-node@10.9.2)
+        version: file:kedro-graphql-viz/modules/codegen(@apollo/client@3.8.8)(@types/node@18.19.3)(ts-node@10.9.2)(typescript@5.3.3)(vue@3.4.0)
       '@opensean/kedro-graphql-viz.ui.data-catalog-browser':
         specifier: workspace:*
         version: file:kedro-graphql-viz/ui/data-catalog-browser(@types/node@18.19.3)(ts-node@10.9.2)(vue@3.4.0)
@@ -981,7 +993,7 @@ importers:
         injected: true
       '@opensean/kedro-graphql-viz.envs.my-vue-wrapper':
         injected: true
-      '@opensean/kedro-graphql-viz.modules.entities':
+      '@opensean/kedro-graphql-viz.modules.codegen':
         injected: true
       '@opensean/kedro-graphql-viz.ui.data-catalog-browser':
         injected: true
@@ -11935,7 +11947,7 @@ packages:
         optional: true
     dependencies:
       '@teambit/base-ui.layout.breakpoints': 1.0.0(react-dom@17.0.2)(react@17.0.2)
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.35.0
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
@@ -11953,7 +11965,7 @@ packages:
         optional: true
     dependencies:
       '@teambit/base-ui.layout.breakpoints': 1.0.0(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.35.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -13361,7 +13373,7 @@ packages:
     dependencies:
       '@teambit/base-ui.elements.icon': 1.0.0(react-dom@17.0.2)(react@17.0.2)
       '@teambit/base-ui.input.button': 1.0.5(react-dom@17.0.2)(react@17.0.2)
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.35.0
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
@@ -13380,7 +13392,7 @@ packages:
     dependencies:
       '@teambit/base-ui.elements.icon': 1.0.0(react-dom@18.2.0)(react@18.2.0)
       '@teambit/base-ui.input.button': 1.0.5(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.35.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -14367,7 +14379,7 @@ packages:
       react:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       react: 17.0.2
     dev: false
 
@@ -14379,7 +14391,7 @@ packages:
       react:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       react: 18.2.0
 
   /@teambit/documenter.ui.table-heading-column@4.0.8(react@17.0.2):
@@ -14390,7 +14402,7 @@ packages:
       react:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       react: 17.0.2
     dev: false
 
@@ -14402,7 +14414,7 @@ packages:
       react:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       react: 18.2.0
 
   /@teambit/documenter.ui.table-heading-row@4.0.11(react-dom@17.0.2)(react@17.0.2):
@@ -14415,7 +14427,7 @@ packages:
     dependencies:
       '@teambit/base-ui.layout.grid-component': 1.0.2(react-dom@17.0.2)(react@17.0.2)
       '@teambit/documenter.ui.table-heading-column': 4.0.8(react@17.0.2)
-      classnames: 2.2.6
+      classnames: 2.3.1
       react: 17.0.2
     transitivePeerDependencies:
       - react-dom
@@ -14431,7 +14443,7 @@ packages:
     dependencies:
       '@teambit/base-ui.layout.grid-component': 1.0.2(react-dom@18.2.0)(react@18.2.0)
       '@teambit/documenter.ui.table-heading-column': 4.0.8(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       react: 18.2.0
     transitivePeerDependencies:
       - react-dom
@@ -14580,7 +14592,7 @@ packages:
     dependencies:
       '@teambit/documenter.ui.table-heading-row': 4.0.11(react-dom@17.0.2)(react@17.0.2)
       '@teambit/documenter.ui.table-row': 4.1.13(react-dom@17.0.2)(react@17.0.2)
-      classnames: 2.2.6
+      classnames: 2.3.1
       react: 17.0.2
     transitivePeerDependencies:
       - react-dom
@@ -14596,7 +14608,7 @@ packages:
     dependencies:
       '@teambit/documenter.ui.table-heading-row': 4.0.11(react-dom@18.2.0)(react@18.2.0)
       '@teambit/documenter.ui.table-row': 4.1.13(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       react: 18.2.0
     transitivePeerDependencies:
       - react-dom
@@ -31457,6 +31469,7 @@ packages:
     dependencies:
       '@opensean/kedro-graphql-viz.composables.apollo-client': file:kedro-graphql-viz/composables/apollo-client(@types/node@18.19.3)(graphql@16.8.1)(react-dom@17.0.2)(react@17.0.2)(ts-node@10.9.2)(typescript@5.3.3)
       '@opensean/kedro-graphql-viz.entities.pipeline': file:kedro-graphql-viz/entities/pipeline(@types/node@18.19.3)(ts-node@10.9.2)
+      '@opensean/kedro-graphql-viz.modules.codegen': file:kedro-graphql-viz/modules/codegen(@apollo/client@3.8.8)(@types/node@18.19.3)(ts-node@10.9.2)(typescript@5.3.3)(vue@3.4.0)
       '@vue/apollo-composable': 4.0.0-beta.12(@apollo/client@3.8.8)(graphql@16.8.1)(typescript@5.3.3)(vue@3.4.0)
       graphql-tag: 2.12.6(graphql@16.8.1)
       jest: 29.3.1(@types/node@18.19.3)(ts-node@10.9.2)
@@ -31465,10 +31478,14 @@ packages:
       vue: 3.4.0(typescript@5.3.3)
     transitivePeerDependencies:
       - '@apollo/client'
+      - '@parcel/watcher'
       - '@types/node'
       - '@vue/composition-api'
       - babel-plugin-macros
+      - bufferutil
+      - cosmiconfig-toml-loader
       - encoding
+      - enquirer
       - graphql
       - graphql-ws
       - node-notifier
@@ -31478,6 +31495,7 @@ packages:
       - supports-color
       - ts-node
       - typescript
+      - utf-8-validate
     dev: false
 
   file:kedro-graphql-viz/composables/pipelines(@apollo/client@3.8.8)(@types/node@18.19.3)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)(ts-node@10.9.2)(typescript@5.3.3)(vue@3.3.11):
@@ -31492,6 +31510,7 @@ packages:
     dependencies:
       '@opensean/kedro-graphql-viz.composables.apollo-client': file:kedro-graphql-viz/composables/apollo-client(@types/node@18.19.3)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)(ts-node@10.9.2)(typescript@5.3.3)
       '@opensean/kedro-graphql-viz.entities.pipeline': file:kedro-graphql-viz/entities/pipeline(@types/node@18.19.3)(ts-node@10.9.2)
+      '@opensean/kedro-graphql-viz.modules.codegen': file:kedro-graphql-viz/modules/codegen(@apollo/client@3.8.8)(@types/node@18.19.3)(ts-node@10.9.2)(typescript@5.3.3)(vue@3.3.11)
       '@vue/apollo-composable': 4.0.0-beta.12(@apollo/client@3.8.8)(graphql@16.8.1)(typescript@5.3.3)(vue@3.3.11)
       graphql-tag: 2.12.6(graphql@16.8.1)
       jest: 29.3.1(@types/node@18.19.3)(ts-node@10.9.2)
@@ -31500,10 +31519,14 @@ packages:
       vue: 3.3.11(typescript@5.3.3)
     transitivePeerDependencies:
       - '@apollo/client'
+      - '@parcel/watcher'
       - '@types/node'
       - '@vue/composition-api'
       - babel-plugin-macros
+      - bufferutil
+      - cosmiconfig-toml-loader
       - encoding
+      - enquirer
       - graphql
       - graphql-ws
       - node-notifier
@@ -31513,6 +31536,7 @@ packages:
       - supports-color
       - ts-node
       - typescript
+      - utf-8-validate
     dev: false
 
   file:kedro-graphql-viz/composables/pipelines(@apollo/client@3.8.8)(@types/node@18.19.3)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)(ts-node@10.9.2)(typescript@5.3.3)(vue@3.4.0):
@@ -31527,6 +31551,7 @@ packages:
     dependencies:
       '@opensean/kedro-graphql-viz.composables.apollo-client': file:kedro-graphql-viz/composables/apollo-client(@types/node@18.19.3)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)(ts-node@10.9.2)(typescript@5.3.3)
       '@opensean/kedro-graphql-viz.entities.pipeline': file:kedro-graphql-viz/entities/pipeline(@types/node@18.19.3)(ts-node@10.9.2)
+      '@opensean/kedro-graphql-viz.modules.codegen': file:kedro-graphql-viz/modules/codegen(@apollo/client@3.8.8)(@types/node@18.19.3)(ts-node@10.9.2)(typescript@5.3.3)(vue@3.4.0)
       '@vue/apollo-composable': 4.0.0-beta.12(@apollo/client@3.8.8)(graphql@16.8.1)(typescript@5.3.3)(vue@3.4.0)
       graphql-tag: 2.12.6(graphql@16.8.1)
       jest: 29.3.1(@types/node@18.19.3)(ts-node@10.9.2)
@@ -31535,10 +31560,14 @@ packages:
       vue: 3.4.0(typescript@5.3.3)
     transitivePeerDependencies:
       - '@apollo/client'
+      - '@parcel/watcher'
       - '@types/node'
       - '@vue/composition-api'
       - babel-plugin-macros
+      - bufferutil
+      - cosmiconfig-toml-loader
       - encoding
+      - enquirer
       - graphql
       - graphql-ws
       - node-notifier
@@ -31548,6 +31577,7 @@ packages:
       - supports-color
       - ts-node
       - typescript
+      - utf-8-validate
     dev: false
 
   file:kedro-graphql-viz/entities/data-catalog(@types/node@18.19.3)(ts-node@10.9.2):
@@ -31775,23 +31805,68 @@ packages:
       - typescript
     dev: false
 
-  file:kedro-graphql-viz/modules/entities(@types/node@18.19.3)(ts-node@10.9.2):
-    resolution: {directory: kedro-graphql-viz/modules/entities, type: directory}
-    id: file:kedro-graphql-viz/modules/entities
-    name: '@opensean/kedro-graphql-viz.modules.entities'
+  file:kedro-graphql-viz/modules/codegen(@apollo/client@3.8.8)(@types/node@18.19.3)(ts-node@10.9.2)(typescript@5.3.3)(vue@3.3.11):
+    resolution: {directory: kedro-graphql-viz/modules/codegen, type: directory}
+    id: file:kedro-graphql-viz/modules/codegen
+    name: '@opensean/kedro-graphql-viz.modules.codegen'
     dependencies:
+      '@graphql-codegen/cli': 5.0.0(@types/node@18.19.3)(graphql@16.8.1)(typescript@5.3.3)
       '@mdx-js/react': 1.6.22(react@18.2.0)
       '@teambit/mdx.ui.mdx-scope-context': 1.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@vue/apollo-composable': 4.0.0-beta.12(@apollo/client@3.8.8)(graphql@16.8.1)(typescript@5.3.3)(vue@3.3.11)
       graphql: 16.8.1
+      graphql-tag: 2.12.6(graphql@16.8.1)
       jest: 29.3.1(@types/node@18.19.3)(ts-node@10.9.2)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     transitivePeerDependencies:
+      - '@apollo/client'
+      - '@parcel/watcher'
       - '@types/node'
+      - '@vue/composition-api'
       - babel-plugin-macros
+      - bufferutil
+      - cosmiconfig-toml-loader
+      - encoding
+      - enquirer
       - node-notifier
       - supports-color
       - ts-node
+      - typescript
+      - utf-8-validate
+      - vue
+    dev: false
+
+  file:kedro-graphql-viz/modules/codegen(@apollo/client@3.8.8)(@types/node@18.19.3)(ts-node@10.9.2)(typescript@5.3.3)(vue@3.4.0):
+    resolution: {directory: kedro-graphql-viz/modules/codegen, type: directory}
+    id: file:kedro-graphql-viz/modules/codegen
+    name: '@opensean/kedro-graphql-viz.modules.codegen'
+    dependencies:
+      '@graphql-codegen/cli': 5.0.0(@types/node@18.19.3)(graphql@16.8.1)(typescript@5.3.3)
+      '@mdx-js/react': 1.6.22(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context': 1.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@vue/apollo-composable': 4.0.0-beta.12(@apollo/client@3.8.8)(graphql@16.8.1)(typescript@5.3.3)(vue@3.4.0)
+      graphql: 16.8.1
+      graphql-tag: 2.12.6(graphql@16.8.1)
+      jest: 29.3.1(@types/node@18.19.3)(ts-node@10.9.2)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - '@apollo/client'
+      - '@parcel/watcher'
+      - '@types/node'
+      - '@vue/composition-api'
+      - babel-plugin-macros
+      - bufferutil
+      - cosmiconfig-toml-loader
+      - encoding
+      - enquirer
+      - node-notifier
+      - supports-color
+      - ts-node
+      - typescript
+      - utf-8-validate
+      - vue
     dev: false
 
   file:kedro-graphql-viz/ui/data-catalog-browser(@types/node@18.19.3)(ts-node@10.9.2)(vue@3.3.11):

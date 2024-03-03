@@ -1,3 +1,5 @@
+// run the following on cli to generate code
+// ../../../node_modules/.bin/graphql-codegen
 import { CodegenConfig } from '@graphql-codegen/cli'
  
 const config: CodegenConfig = {
@@ -15,7 +17,10 @@ const config: CodegenConfig = {
     },
     'codegen.mock.ts':{
       plugins: [
-        'typescript-mock-data'
+        {'typescript-mock-data': {
+          'useTypeImports': true,
+          'addTypename': true
+        }}
       ]
     }
   }

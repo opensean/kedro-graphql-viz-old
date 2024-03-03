@@ -1,4 +1,4 @@
-import { render } from "@testing-library/vue"
+import { render, screen } from "@testing-library/vue"
 
 import { graphql, HttpResponse } from 'msw'
 
@@ -32,15 +32,14 @@ const server = setupServer(
 
 test('basic case', async () => {
 
+  console.log(aPipelines())
   server.listen()
 
   expect(BasicPipelines).toBeTruthy()
 
-  const { findByText } = render(BasicPipelines)
-
-  const result = await findByText('_typename')
-
-  expect(result).toBeTruthy()
+  render(BasicPipelines)
+  
+  const result = screen.getByText("_typename")
 
   server.close()
 

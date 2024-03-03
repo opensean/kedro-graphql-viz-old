@@ -43,34 +43,34 @@ export const usePipelines = ({
   const count = ref(0);
   const loading = ref(true);
   const cursors = ref([null,null])
-  console.log(graphql(`
-    query pipelines($limit: Int!, $filter: [String!], $cursor: String) {
-        pipelines(limit: $limit, cursor:$cursor, filter: $filter) {
-          pageMeta {
-            nextCursor
-            count
-          }
-          pipelines {
-            id
-            name
-            status
-            parameters {
-              name
-              type
-              value
-            }
-            dataCatalog {
-              name
-              config
-            }
-            tags {
-              key
-              value
-            }
-          }
-        }
-      }
-  `));
+//  console.log(graphql(`
+//    query pipelines($limit: Int!, $filter: [String!], $cursor: String) {
+//        pipelines(limit: $limit, cursor:$cursor, filter: $filter) {
+//          pageMeta {
+//            nextCursor
+//            count
+//          }
+//          pipelines {
+//            id
+//            name
+//            status
+//            parameters {
+//              name
+//              type
+//              value
+//            }
+//            dataCatalog {
+//              name
+//              config
+//            }
+//            tags {
+//              key
+//              value
+//            }
+//          }
+//        }
+//      }
+//  `));
   //const { result, onResult, onError } = provideApolloClient(apolloClient)(() => useQuery(query, variables, options))
   const { result } = provideApolloClient(apolloClient)(() => useQuery(query, variables, options))
   const pipelines = computed(() => {
